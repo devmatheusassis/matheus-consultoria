@@ -1,0 +1,115 @@
+*{
+    margin: 0px;
+}
+
+header {
+    background-color: rgba(27, 27, 27, 0.548);
+    padding: 20px 0;
+}
+
+.caixa{
+   position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+.logo{
+    position: relative;
+    top: 4px;
+    left: 30px;
+}
+.logo img{
+    border-radius: 8px;
+}
+.navegacao{
+    position: absolute;
+    top: 95px;
+    right: 0;
+}
+.navegacao li{
+    display: inline;
+    padding: 10px 2px;
+    margin: 0 10px;
+}
+.navegacao button{
+    background-color: #2c2c2c;
+    padding: 8px;
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+}
+.navegacao a{
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.navegacao a:hover {
+    color: #747474;
+}
+
+
+.servicos{
+    width: 940px;
+    margin: 30px auto;
+}
+.servicos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 30px 10px;
+    padding: 0 0 14px 0;
+    box-sizing: border-box;
+    border: 2px solid #2c2c2c;
+    border-radius: 10px;
+}
+
+.servicos li:hover {
+    border-color: #747474;
+}
+.servicos li:active h2{
+    color: #747474;
+}
+.servicos a{
+    text-decoration: none;
+}
+.servicos img{
+    padding: 20px;
+    width: 130px;
+    height: 130px;
+}
+.servicos h2{
+    padding: 6px;   
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #2e2e2e;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;   
+}
+.servicos p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+
+
+}   
+footer {
+    position: relative;
+    text-align: center;
+    background: #303030;
+    height: 149px;
+    top: 20px;
+}
+footer p{
+    position: relative;
+    color: white;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 70px;
+}
+footer p:hover{
+    color: #747474;
+}
