@@ -15,17 +15,48 @@
                     <li><button><a href="index.html">Início</a></button></li>
                     <li><button><a href="https://br.linkedin.com/in/matheusdeassis" target="_blank">LinkedIn</a></button></li>
                     <li><button><a href="https://www.instagram.com/matheush.assis/" target="_blank">Instagram</a></button></li>
-                    <li><button><a href="https://www.whatsapp.com/" target="_blank">WhatsApp</a></button></li>
                     <li><button><a href="contato.html">Contato</a></button></li>
                  </ul>
                 </nav>
         </div>
     </header>
     <main>
-        
+        <form>
+            <div class="campos">
+                <label for="nome">Nome completo</label>
+                    <input type="text" id="nome">
+                <label for="email">E-mail</label>
+                    <input type="text" id="email">
+                <label for="celular">Celular</label>
+                    <input type="text" id="celular">
+                <label for="mensagem">Mensagem</label>
+                    <textarea name="mensagem" id="mensagem" cols="40" rows="10">Digite sua mensagem</textarea>
+            </div>
+            <div class="radios">
+                <p>Preferência de contato</p>
+                <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email"> E-mail</label>
+                <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp"> WhatsApp</label>
+                <label for="radio-ligacao"><input type="radio" name="contato" value="ligacao" id="radio-ligacao"> Ligação</label>
+            </div>
+            <div class="checkbox">
+                <label for="checkbox"><input type="checkbox" id="checkbox"> Gostaria de receber nossas novidades por e-mail?</label>
+            </div>
+            <div class="horario">
+                <p>Melhor horário para contato</p>
+                <select name="horario" id="turno">
+                    <option value="">Manhã</option>
+                    <option value="">Tarde</option>
+                    <option value="">Noite</option>
+                </select>
+            </div>
+            <div class="botao">
+            <input type="submit" value="Enviar formulário">
+            </div>
+        </form>
     </main>
     <footer>
-        <p>Copyright &copy; Matheus Henrique de Assis - 2022</p>
+        <p>Copyright &copy; Matheus Henrique de Assis</p>
+        <p>2022</p>
     </footer>
     </body>
 </html>

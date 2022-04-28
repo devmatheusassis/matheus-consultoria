@@ -2,8 +2,10 @@
     margin: 0px;
 }
 
+/* Cabeçalho da página */
+
 header {
-    background-color: rgba(27, 27, 27, 0.548);
+    background-color: #131313;;
     padding: 20px 0;
 }
 
@@ -48,6 +50,8 @@ header {
     color: #747474;
 }
 
+/* Conteúdo da página */
+
 .servico{    
     position: relative;
     width: 900px;
@@ -87,10 +91,13 @@ header {
 .preco :hover{
     color: #747474;
 }
+
+/* Rodapé da página */
+
 footer {
     position: relative;
     text-align: center;
-    background: #303030;
+    background: #222222;
     height: 149px;
     top: 20px;
 }

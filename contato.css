@@ -2,8 +2,10 @@
     margin: 0px;
 }
 
+/* Cabeçalho da página */
+
 header {
-    background-color: rgba(27, 27, 27, 0.548);
+    background-color: #131313;
     padding: 20px 0;
 }
 
@@ -48,10 +50,89 @@ header {
     color: #747474;
 }
 
+/* Conteúdo da página */
+
+main{
+    width: 940px;
+    margin: 0 auto;
+}
+
+form{
+    margin: 40px auto;
+}
+.campos label, .radios p, .horario p{
+    color: #ffffff;
+    display: block;
+    padding: 10px 0;
+    text-align: center;
+    background-color: #303030;
+    margin: 10px 33%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    text-transform: uppercase;
+}
+.campos label:active{
+    color: #747474;
+}
+.campos input, .campos textarea{
+    position: relative;
+    text-align: center;
+    display: block;
+    padding: 10px 5px;
+    left: 34.3%;
+    width: 30%;
+    border-radius: 8px;
+    border: 1px solid #2c2c2c;
+}
+.radios label {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    padding: 5px 0;
+    text-align: center;
+    display: grid;
+}
+.radios input {
+    text-align: center;
+    margin: 5px auto;
+}
+.radios label:active{
+    color: #747474;
+}
+.checkbox{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    margin: 10px auto;
+}
+.horario select{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    left: 44.5%;
+    margin-top: 5px;
+    padding: 5px 20px;
+    border-radius: 8px;
+}
+.botao input{
+    color: #ffffff;
+    position: relative;
+    padding: 10px 20px;
+    margin-top: 25px;
+    left: 42.5%;
+    background: #2c2c2c;
+    border: none;
+    border-radius: 8px;
+}
+
+/* Rodapé da página */
+
 footer {
     position: relative;
     text-align: center;
-    background: #303030;
+    background: #222222;
     height: 149px;
     top: 20px;
 }
@@ -60,7 +141,7 @@ footer p{
     color: white;
     font-size: 13px;
     font-family: Arial, Helvetica, sans-serif;
-    top: 50px;
+    top: 70px;
 }
 footer p:hover{
     color: #747474;
