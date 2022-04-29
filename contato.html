@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Matheus Henrique de Assis">
     <title>Matheus # Contato</title>
     <link rel="stylesheet" href="contato.css">
 </head>
@@ -24,13 +25,13 @@
         <form>
             <div class="campos">
                 <label for="nome">Nome completo</label>
-                    <input type="text" id="nome">
+                    <input type="text" id="nome" required>
                 <label for="email">E-mail</label>
-                    <input type="text" id="email">
+                    <input type="text" id="email" required>
                 <label for="celular">Celular</label>
-                    <input type="text" id="celular">
+                    <input type="text" id="celular" required>
                 <label for="mensagem">Mensagem</label>
-                    <textarea name="mensagem" id="mensagem" cols="40" rows="10">Digite sua mensagem</textarea>
+                    <textarea name="mensagem" id="mensagem" cols="40" rows="10" placeholder="Digite sua mensagem" required></textarea>
             </div>
             <div class="radios">
                 <p>Preferência de contato</p>
@@ -43,7 +44,8 @@
             </div>
             <div class="horario">
                 <p>Melhor horário para contato</p>
-                <select name="horario" id="turno">
+                <select name="horario" id="turno" required>
+                    <option value="">Selecione</option>
                     <option value="">Manhã</option>
                     <option value="">Tarde</option>
                     <option value="">Noite</option>
@@ -55,8 +57,7 @@
         </form>
     </main>
     <footer>
-        <p>Copyright &copy; Matheus Henrique de Assis</p>
-        <p>2022</p>
+        <p>Copyright &copy; Matheus Henrique de Assis <br> 2022</p>
     </footer>
     </body>
 </html>

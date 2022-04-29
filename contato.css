@@ -1,3 +1,5 @@
+/* Author: Matheus Henrique de Assis */
+
 *{
     margin: 0px;
 }
@@ -5,62 +7,63 @@
 /* Cabeçalho da página */
 
 header {
-    background-color: #131313;
+    background-color: #151515;
     padding: 20px 0;
 }
 
-.caixa{
-   position: relative;
+.caixa{                                 /* Tamanho da página */
+   position: relative;      
     width: 940px;
     margin: 0 auto;
 }
-.logo{
+.logo{                                   /* Logo */
     position: relative;
     top: 4px;
     left: 30px;
 }
-.logo img{
+.logo img{                               /* Imagem da Logo */
     border-radius: 8px;
 }
-.navegacao{
+.navegacao{                              /* Elementos da navegação */
     position: absolute;
     top: 95px;
     right: 0;
 }
-.navegacao li{
+.navegacao li{                          /* Itens da navegação */
     display: inline;
     padding: 10px 2px;
     margin: 0 10px;
 }
-.navegacao button{
+.navegacao button{                       /* Botões da navegação */
     background-color: #2c2c2c;
     padding: 8px;
     width: 100px;
     border: none;
     border-radius: 5px;
+    outline: none;
 }
-.navegacao a{
+.navegacao a{                           /* Ancoragem dos botões da Navegação */
     text-transform: uppercase;
     color: white;
     text-decoration: none;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
 }
-.navegacao a:hover {
+.navegacao a:hover {                    /* Reação dos botões da Navegação */
     color: #747474;
 }
 
 /* Conteúdo da página */
 
-main{
+main{                                    /* Divisão principal da Página*/
     width: 940px;
     margin: 0 auto;
 }
 
-form{
+form{                                    /* Formulário */
     margin: 40px auto;
 }
-.campos label, .radios p, .horario p{
+.campos label, .radios p, .horario p{    /* Campos Labels da página */
     color: #ffffff;
     display: block;
     padding: 10px 0;
@@ -74,10 +77,10 @@ form{
     border-top-right-radius: 8px;
     text-transform: uppercase;
 }
-.campos label:active{
+.campos label:active{                     /* Reação cursos do mouse nos Labels */
     color: #747474;
 }
-.campos input, .campos textarea{
+.campos input, .campos textarea{           /* Campos Input e Textarea */
     position: relative;
     text-align: center;
     display: block;
@@ -86,28 +89,30 @@ form{
     width: 30%;
     border-radius: 8px;
     border: 1px solid #2c2c2c;
+    outline: none;
 }
-.radios label {
+.radios label {                            /* Label do Radio */
+    position: relative;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 13px;
     padding: 5px 0;
     text-align: center;
-    display: grid;
+    left: 40%;
 }
-.radios input {
+.radios input {                             /* Input do Radio */
     text-align: center;
     margin: 5px auto;
 }
-.radios label:active{
+.radios label:active{                       /* Reação do cursor no Radio */
     color: #747474;
 }
-.checkbox{
+.checkbox{                                  /* Caixa de marcar Receber por e-mail */
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 13px;
     margin: 10px auto;
 }
-.horario select{
+.horario select{                            /* Lista de opções de horário de contato */
     position: relative;
     display: inline-block;
     text-align: center;
@@ -116,7 +121,7 @@ form{
     padding: 5px 20px;
     border-radius: 8px;
 }
-.botao input{
+.botao input{                               /* Botão Enviar formulário */
     color: #ffffff;
     position: relative;
     padding: 10px 20px;
@@ -125,24 +130,29 @@ form{
     background: #2c2c2c;
     border: none;
     border-radius: 8px;
+    outline: none;
+    cursor: pointer;
+}
+.botao input:active{                        /* Reação do cursor no botão */
+    color: #747474;
 }
 
 /* Rodapé da página */
 
-footer {
+footer {                                     /* Rodapé da página */
     position: relative;
     text-align: center;
-    background: #222222;
+    background: #303030;
     height: 149px;
     top: 20px;
 }
-footer p{
+footer p{                                    /* Copyright */
     position: relative;
     color: white;
     font-size: 13px;
     font-family: Arial, Helvetica, sans-serif;
     top: 70px;
 }
-footer p:hover{
+footer p:hover{                              /* Reação no Copyright */
     color: #747474;
 }
