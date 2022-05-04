@@ -1,117 +1,110 @@
-/* Author: Matheus Henrique de Assis*/
-
 *{
     margin: 0px;
 }
-
-/* Cabeçalho da página */
-
-header {
-    background-color: #151515;
-    padding: 20px 0;
+:root{
+    --cor-principal: #151515;
+    --cor-botao: #2c2c2c;    
 }
-
-.caixa{                            /* Tamanho da página */
-   position: relative;      
-    width: 940px;
+.caixa-header h1{
+    background: var(--cor-principal);
+    padding: 15px 0;
+    padding-bottom: 50px;
+}
+.caixa-header img{
+    position: relative;
+    transform: translate(-50%, -50%);
+    top: 104px;
+    left: 51.2%;
+    border-radius: 8px;
     margin: 0 auto;
 }
-.logo{                            /* Logo */
+.navegacao{
+    background: var(--cor-principal);
     position: relative;
-    top: 4px;
-    left: 30px;
+    text-align: center;
+    top: -40px;
+    padding-bottom: 10px;
 }
-.logo img{                        /* Imagem da Logo */
+.navegacao li{
+    display: inline-block;
+    padding: 0 15px;
+}
+.navegacao button{
+    position: relative;
+    text-align: center;
+    color: white;
+    padding: 5px 20px;
+    margin: 10px auto;
+    width: 130px;
+    background: var(--cor-botao);
+    border: transparent;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+}
+.navegacao button:hover{
+    background: #414141;
+}
+.navegacao button:active{
+    background: #ff8c00;
+}
+
+/* Corpo da Página */
+
+.servicos{
+    text-align: center;
+}
+.servicos li{
+    display: inline-block;
+    list-style: none;
+    vertical-align: top;
+    width: 21em;
+    height: 15em;
+    margin: 10px;
+    cursor: pointer;
+    border: 2px var(--cor-botao) solid;
     border-radius: 8px;
 }
-.navegacao{                       /* Elementos da navegação */
-    position: absolute;
-    top: 95px;
-    right: 0;
+.servicos li:hover{
+    border-color: #ff8c00;
 }
-.navegacao li{                    /* Itens da navegação */
-    display: inline;
-    padding: 10px 2px;
-    margin: 0 10px;
-}
-.navegacao button{                /* Botões da navegação */
-    background-color: #2c2c2c;
-    padding: 8px;
-    width: 100px;
-    border: none;
-    border-radius: 5px;
-    outline: none;
-}
-.navegacao a{                     /* Ancoragem dos botões da Navegação */
-    text-transform: uppercase;
+.servicos h2{
     color: white;
-    text-decoration: none;
-    font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
-}
-.navegacao a:hover {              /* Reação dos botões da Navegação */
-    color: #747474;
-}
-
-/* Conteúdo da página */
-
-.servicos{                         /* Lista de seviços na página principal */
-    width: 940px;
-    margin: 30px auto; 
-}
-.servicos li{                       /* Itens de lista de serviços */
-    display: inline-block;
-    text-align: center;
-    width: 30%;
-    vertical-align: top;
-    margin: 30px 10px;
-    padding: 0 0 14px 0;
-    box-sizing: border-box;
-    border: 2px solid #2c2c2c;
-    border-radius: 10px;
-}
-
-.servicos li:hover {                /* Reação de cursor nos serviços */
-    border-color: #747474;
-}
-.servicos li:active h2{             /* Reação de cursor nos serviços */
-    color: #747474;
-}
-.servicos a{                        /* Ancoragem de lista de servicos */
+    font-size: 20px;
     text-decoration: none;
-}
-.servicos img{                      /* Imagens na lista de serviços */
-    padding: 20px;
-    width: 130px;
-    height: 130px;
-}
-.servicos h2{                       /* Nome dos serviços */
-    padding: 6px;   
-    color: white;
-    font-size: 16px;
     text-transform: uppercase;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #2e2e2e;
+    background: var(--cor-botao);
     border-top-left-radius: 5px;
-    border-top-right-radius: 5px;   
+    border-top-right-radius: 5px;
+}
+.servicos img{
+    margin: 50px 0;
+    width: 100px;
+}
+.servicos a{
+    text-decoration: none;
+}
+.servicos button:active{
+    background: #ff8c00;
 }
 
-/* Rodapé da página */
+/* Rodapé */
 
-footer {                            /* Rodapé da página */
-    position: relative;
+footer{
+    background: var(--cor-principal);
+    height: 100px;
+    margin-top: 60px;
+}
+footer p{
     text-align: center;
-    background: #303030;
-    height: 149px;
-    top: 20px;
-}
-footer p{                           /* Copyright */
-    position: relative;
     color: white;
-    font-size: 13px;
     font-family: Arial, Helvetica, sans-serif;
-    top: 70px;
+    font-size: 13px;
+    padding-top: 35px;
 }
-footer p:hover{                     /* Reação no Copyright */
-    color: #747474;
+footer p:hover{
+    color: #cccccc;
 }

@@ -3,61 +3,60 @@
 *{
     margin: 0px;
 }
-
-/* Cabeçalho da página */
-
-header {
-    background-color: #151515;
-    padding: 20px 0;
+:root{
+    --cor-principal: #151515;
+    --cor-botao: #2c2c2c;    
 }
-
-.caixa{                                 /* Tamanho da página */
-   position: relative;      
-    width: 940px;
+.caixa-header h1{
+    background: var(--cor-principal);
+    padding: 15px 0;
+    padding-bottom: 50px;
+}
+.caixa-header img{
+    position: relative;
+    transform: translate(-50%, -50%);
+    top: 104px;
+    left: 51.2%;
+    border-radius: 8px;
     margin: 0 auto;
 }
-.logo{                                   /* Logo */
+.navegacao{
+    background: var(--cor-principal);
     position: relative;
-    top: 4px;
-    left: 30px;
+    text-align: center;
+    top: -40px;
+    padding-bottom: 10px;
 }
-.logo img{                               /* Imagem da Logo */
-    border-radius: 8px;
+.navegacao li{
+    display: inline-block;
+    padding: 0 15px;
 }
-.navegacao{                              /* Elementos da navegação */
-    position: absolute;
-    top: 95px;
-    right: 0;
-}
-.navegacao li{                          /* Itens da navegação */
-    display: inline;
-    padding: 10px 2px;
-    margin: 0 10px;
-}
-.navegacao button{                       /* Botões da navegação */
-    background-color: #2c2c2c;
-    padding: 8px;
-    width: 100px;
-    border: none;
-    border-radius: 5px;
-    outline: none;
-}
-.navegacao a{                           /* Ancoragem dos botões da Navegação */
-    text-transform: uppercase;
+.navegacao button{
+    position: relative;
+    text-align: center;
     color: white;
-    text-decoration: none;
+    padding: 5px 20px;
+    margin: 10px auto;
+    width: 130px;
+    background: var(--cor-botao);
+    border: transparent;
+    border-radius: 5px;
+    text-transform: uppercase;
     font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
+    outline: none;
+    cursor: pointer;
 }
-.navegacao a:hover {                    /* Reação dos botões da Navegação */
-    color: #747474;
+.navegacao button:hover{
+    background: #414141;
 }
-
+.navegacao button:active{
+    background: #ff8c00;
+}
 /* Conteúdo da página */
 
 .servico{                               /* Elemento principal do serviço */
     position: relative;
-    width: 900px;
+    width: 60%;
     margin: 30px auto;
     text-align: center;
     left: 10px;
@@ -92,25 +91,26 @@ header {
     font-size: 50px;
 }
 .preco :hover{                          /* Reação de cursor no preço */
-    color: #747474;
+    color: #ff8c00;
+    transition: 0.5s;
+    cursor: default;
+    transform: scale(1.1);
 }
 
 /* Rodapé da página */
 
-footer {                                     /* Rodapé da página */
-    position: relative;
+footer{
+    background: var(--cor-principal);
+    height: 100px;
+    margin-top: 35px;
+}
+footer p{
     text-align: center;
-    background: #303030;
-    height: 149px;
-    top: 20px;
-}
-footer p{                                    /* Copyright */
-    position: relative;
     color: white;
-    font-size: 13px;
     font-family: Arial, Helvetica, sans-serif;
-    top: 70px;
+    font-size: 13px;
+    padding-top: 35px;
 }
-footer p:hover{                              /* Reação no Copyright */
-    color: #747474;
+footer p:hover{
+    color: #cccccc;
 }

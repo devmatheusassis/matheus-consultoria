@@ -9,15 +9,15 @@
 </head>
 <body>
     <header>
-        <div class="caixa">
+        <div class="caixa-header">
              <h1 class="logo"><img src="./logo.jpg" alt="Logo"></h1>
                 <nav class="navegacao">
                  <ul>
-                    <li><button><a href="index.html">Início</a></button></li>
-                    <li><button><a href="https://br.linkedin.com/in/matheusdeassis" target="_blank">LinkedIn</a></button></li>
-                    <li><button><a href="https://www.instagram.com/matheush.assis/" target="_blank">Instagram</a></button></li>
-                    <li><button><a href="contato.html">Contato</a></button></li>
-                 </ul>
+                    <li class="nav-principal"><a href="index.html"><button>Início</button></a></li>
+                    <li class="nav-principal"><a href="contato.html"><button>Contato</button></a></li>
+                    <li class="nav-social"><a href="https://br.linkedin.com/in/matheusdeassis" target="_blank"><button>LinkedIn</button></a></li>
+                    <li class="nav-social"><a href="https://www.instagram.com/matheush.assis/" target="_blank"><button>Instagram</button></a></li>
+                    </ul>
                 </nav>
         </div>
     </header>
@@ -27,11 +27,11 @@
                 <label for="nome">Nome completo</label>
                     <input type="text" id="nome" required>
                 <label for="email">E-mail</label>
-                    <input type="text" id="email" required>
+                    <input type="email" id="email" placeholder="e-mail@domínio.com" required>
                 <label for="celular">Celular</label>
-                    <input type="text" id="celular" required>
+                    <input type="number" id="celular" placeholder="(xx) x xxxx-xxxx" required>
                 <label for="mensagem">Mensagem</label>
-                    <textarea name="mensagem" id="mensagem" cols="40" rows="10" placeholder="Digite sua mensagem" required></textarea>
+                    <textarea name="mensagem" id="mensagem" cols="40" rows="10" placeholder="Digite sua mensagem" maxlength="500" required></textarea>
             </div>
             <div class="radios">
                 <p>Preferência de contato</p>
@@ -40,21 +40,46 @@
                 <label for="radio-ligacao"><input type="radio" name="contato" value="ligacao" id="radio-ligacao"> Ligação</label>
             </div>
             <div class="checkbox">
-                <label for="checkbox"><input type="checkbox" id="checkbox"> Gostaria de receber nossas novidades por e-mail?</label>
+                <label for="checkbox"><input type="checkbox" id="checkbox" checked> Gostaria de receber nossas novidades por e-mail?</label>
             </div>
             <div class="horario">
                 <p>Melhor horário para contato</p>
                 <select name="horario" id="turno" required>
-                    <option value="">Selecione</option>
-                    <option value="">Manhã</option>
-                    <option value="">Tarde</option>
-                    <option value="">Noite</option>
+                    <option disabled selected value="">Selecione</option>
+                    <option value="manha">Manhã</option>
+                    <option value="tarde">Tarde</option>
+                    <option value="noite">Noite</option>
                 </select>
             </div>
             <div class="botao">
             <input type="submit" value="Enviar formulário">
             </div>
         </form>
+        <div class="horario-funcionamento">
+            <p>Horário de funcionamento:</p>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Dia</th>
+                    <th>Horário</th>
+                </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Segunda</td>
+                <td>8h - 20h</td>
+            <tr>
+                <td>Quarta</td>
+                <td>8h - 20h</td>
+            </tr>
+            <tr>
+                <td>Sexta</td>
+                <td>8h - 20h</td>
+            </tr>
+            </tbody>
+        </table>
+
     </main>
     <footer>
         <p>Copyright &copy; Matheus Henrique de Assis <br> 2022</p>
