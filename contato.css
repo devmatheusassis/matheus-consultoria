@@ -11,6 +11,7 @@
     background: var(--cor-principal);
     padding: 15px 0;
     padding-bottom: 50px;
+    font-family: 'Montserrat', sans-serif;
 }
 .caixa-header img{
     position: relative;
@@ -42,9 +43,10 @@
     border: transparent;
     border-radius: 5px;
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: normal;
     outline: none;
     cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
 }
 .navegacao button:hover{
     background: #414141;
@@ -69,12 +71,12 @@ form{                                    /* Formulário */
     text-align: center;
     background-color: #303030;
     margin: 10px 33%;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 13px;
-    font-weight: bold;
+    font-weight: normal;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
 }
 .campos label:active{                     /* Reação cursos do mouse nos Labels */
     color: #747474;
@@ -92,17 +94,19 @@ form{                                    /* Formulário */
     border-radius: 8px;
     border: 1px solid #2c2c2c;
     outline: none;
+    caret-color: #ff8c00;
+    font-family: 'Montserrat', sans-serif;
 }
 .campos textarea:focus{
     border-color: #ff8c00;
 }
 .radios label {                            /* Label do Radio */
     position: relative;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 13px;
     padding: 5px 0;
     text-align: center;
     left: 43%;
+    font-family: 'Montserrat', sans-serif;
 }
 .radios input {                             /* Input do Radio */
     text-align: center;
@@ -113,9 +117,9 @@ form{                                    /* Formulário */
 }
 .checkbox{                                  /* Caixa de marcar Receber por e-mail */
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 13px;
     margin: 10px auto;
+    font-family: 'Montserrat', sans-serif;
 }
 .horario select{                            /* Lista de opções de horário de contato */
     display: inline-block;
@@ -125,6 +129,7 @@ form{                                    /* Formulário */
     padding: 5px 20px;
     border-radius: 8px;
     outline: none;
+    font-family: 'Montserrat', sans-serif;
 }
 .horario select:focus{
     border-color: #ff8c00;
@@ -138,17 +143,18 @@ form{                                    /* Formulário */
     border-radius: 8px;
     outline: none;
     cursor: pointer;
-    margin-left: 45.5%;
+    margin-left: 45.1%;
+    font-family: 'Montserrat', sans-serif;
 }
 .botao input:active{                        /* Reação do cursor no botão */
     background: var(--cor-botao);
 }
 
 .horario-funcionamento{
-    margin-left: 44.8%;
+    margin-left: 44%;
+    font-family: 'Montserrat', sans-serif;
 }
 .horario-funcionamento p{
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     margin-top: 30px;
     margin-bottom: 10px;
@@ -158,13 +164,12 @@ table{
     margin-left: 44%;
     border-radius: 5px;
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 thead{
     background-color: #2c2c2c;
     color: white;
     text-transform: uppercase;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 13px;
 }
 th, td{
@@ -179,11 +184,11 @@ footer{
     background: var(--cor-principal);
     height: 100px;
     margin-top: 35px;
+    font-family: 'Montserrat', sans-serif;
 }
 footer p{
     text-align: center;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 13px;
     padding-top: 35px;
 }

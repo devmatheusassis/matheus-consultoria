@@ -1,10 +1,22 @@
+/*Author: Matheus Henrique Teixeira de Assis*/
+
 *{
     margin: 0px;
 }
+
+/* Variáveis */
+
 :root{
     --cor-principal: #151515;
-    --cor-botao: #2c2c2c;    
+    --cor-botao: #2c2c2c;
+    --cor-secundaria: #ff8c00;    
 }
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+/* Cabeçalho da página */
+
 .caixa-header h1{
     background: var(--cor-principal);
     padding: 15px 0;
@@ -40,7 +52,8 @@
     border: transparent;
     border-radius: 5px;
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: normal;
+    font-family: 'Montserrat', sans-serif;
     outline: none;
     cursor: pointer;
 }
@@ -48,11 +61,12 @@
     background: #414141;
 }
 .navegacao button:active{
-    background: #ff8c00;
+    background: var(--cor-secundaria);
 }
 
 /* Corpo da Página */
 
+/* Caixa de Serviços */
 .servicos{
     text-align: center;
 }
@@ -68,12 +82,13 @@
     border-radius: 8px;
 }
 .servicos li:hover{
-    border-color: #ff8c00;
+    border-color: var(--cor-secundaria);
 }
 .servicos h2{
+    padding: 4px 0;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
+    font-size: 18px;
+    font-weight: normal;
     text-decoration: none;
     text-transform: uppercase;
     background: var(--cor-botao);
@@ -88,22 +103,64 @@
     text-decoration: none;
 }
 .servicos button:active{
-    background: #ff8c00;
+    background: var(--cor-secundaria);
+}
+
+/* Caixa de About US */
+
+.caixa-about{
+    margin: 2.5% 15% 3% 18%;
+    text-align: justify;
+    font-size: 15px;
+}
+.caixa-about img{
+    margin-right: 2%;
+    float: left;
+    clear: left;
+}
+.caixa-about strong:hover{
+    color: var(--cor-secundaria);
+}
+
+/* Caixa de Localização */
+
+.caixa-localizacao{
+    padding-bottom: 60px;
+}
+
+.caixa-localizacao h3{
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 18px;
+    font-weight: normal;
+    text-transform: uppercase;
+    background-color: var(--cor-principal);
+}
+.caixa-localizacao p{
+    margin: 2.5% 14% 3% 16%;
+    text-align: center;
+    padding: 5px 0;
+}
+.caixa-localizacao iframe{
+    margin: 0 10% 0 20.5%;
+    width: 62%;
+    height: 300px;
+    border: 1px #cacaca solid;
+    border-radius: 10px;
 }
 
 /* Rodapé */
 
 footer{
     background: var(--cor-principal);
-    height: 100px;
-    margin-top: 60px;
+    height: 130px;
 }
 footer p{
     text-align: center;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 13px;
-    padding-top: 35px;
+    padding-top: 55px;
 }
 footer p:hover{
     color: #cccccc;

@@ -42,9 +42,10 @@
     border: transparent;
     border-radius: 5px;
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: normal;
     outline: none;
     cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
 }
 .navegacao button:hover{
     background: #414141;
@@ -63,14 +64,15 @@
     border: 2px solid #2c2c2c;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 .servico h2{                            /* Nome do serviço */
     padding: 10px 0;
     color: white;
     background-color: #2e2e2e;
-    font-size: 16px;
+    font-size: 18px;
     text-transform: uppercase;
+    font-weight: normal;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
@@ -80,6 +82,7 @@
 .descricao{                             /* Descrição do serviço */
     margin: 0 50px;
     font-size: 13px;
+    text-align: justify;
 }
 .valor{                                 /* Nome VALOR do serviço */
     padding: 15px 0;
@@ -110,6 +113,7 @@ footer p{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 13px;
     padding-top: 35px;
+    font-family: 'Montserrat', sans-serif;
 }
 footer p:hover{
     color: #cccccc;
