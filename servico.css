@@ -57,10 +57,9 @@
 
 .servico{                               /* Elemento principal do serviço */
     position: relative;
-    width: 60%;
-    margin: 30px auto;
+    width: 80%;
     text-align: center;
-    left: 10px;
+    margin: 0 auto;
     border: 2px solid #2c2c2c;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
