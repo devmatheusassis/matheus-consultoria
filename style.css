@@ -1,7 +1,8 @@
 /*Author: Matheus Henrique Teixeira de Assis*/
 
 *{
-    margin: 0px;
+    margin: 0;
+    padding: 0;
 }
 
 /* Variáveis */
@@ -16,17 +17,14 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 /* Cabeçalho da página */
-
 .caixa-header h1{
     background: var(--cor-principal);
     padding: 15px 0;
     padding-bottom: 50px;
 }
 .caixa-header img{
-    position: relative;
-    transform: translate(-50%, -50%);
+    display: flex;
     top: 104px;
-    left: 51.2%;
     border-radius: 8px;
     margin: 0 auto;
 }
@@ -70,6 +68,10 @@ body{
 .servicos{
     text-align: center;
 }
+.servicos li:hover{
+    transform: scale(1.02);
+    transition: 0.3s;
+}
 .servicos li{
     display: inline-block;
     list-style: none;
@@ -109,7 +111,7 @@ body{
 /* Caixa de About US */
 
 .caixa-about{
-    margin: 2.5% 12% 3% 14%;
+    margin: 2.5% 15%;
     text-align: justify;
     font-size: 15px;
 }

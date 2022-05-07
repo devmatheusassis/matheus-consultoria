@@ -1,2 +1,0 @@
-[0505/170229.465:ERROR:exit_code_watcher_win.cc(87)] Failed to wait for process exit or stop event
-[0505/170229.622:ERROR:registration_protocol_win.cc(131)] TransactNamedPipe: O pipe foi finalizado. (0x6D)

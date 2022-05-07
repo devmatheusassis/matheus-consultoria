@@ -1,7 +1,8 @@
 /* Author: Matheus Henrique de Assis */
 
 *{
-    margin: 0px;
+    margin: 0;
+    padding: 0;
 }
 :root{
     --cor-principal: #151515;
@@ -13,10 +14,8 @@
     padding-bottom: 50px;
 }
 .caixa-header img{
-    position: relative;
-    transform: translate(-50%, -50%);
+    display: flex;
     top: 104px;
-    left: 51.2%;
     border-radius: 8px;
     margin: 0 auto;
 }
