@@ -56,7 +56,7 @@
 
 .servico{                               /* Elemento principal do serviço */
     position: relative;
-    width: 80%;
+    width: 60%;
     text-align: center;
     margin: 0 auto;
     border: 2px solid #2c2c2c;
@@ -115,4 +115,18 @@ footer p{
 }
 footer p:hover{
     color: #cccccc;
+}
+/* Ajuste responsivo Mobile */
+
+@media screen and (max-width: 480px) {
+    
+    .caixa-header img{
+        width: 33% ;
+    }
+    .navegacao li{
+        display: block;
+    }
+    .servico{
+        width: 80%;
+    }
 }

@@ -99,12 +99,13 @@ form{                                    /* Formulário */
 .campos textarea:focus{
     border-color: #ff8c00;
 }
+.radios{
+    text-align: center;
+}
 .radios label {                            /* Label do Radio */
-    position: relative;
+    margin-right: 10px;
     font-size: 13px;
     padding: 5px 0;
-    text-align: center;
-    left: 43%;
     font-family: 'Montserrat', sans-serif;
 }
 .radios input {                             /* Input do Radio */
@@ -117,14 +118,14 @@ form{                                    /* Formulário */
 .checkbox{                                  /* Caixa de marcar Receber por e-mail */
     text-align: center;
     font-size: 13px;
-    margin: 10px auto;
+    margin: 15px auto;
     font-family: 'Montserrat', sans-serif;
 }
-.horario select{                            /* Lista de opções de horário de contato */
-    display: inline-block;
+.horario:not(p){
     text-align: center;
-    margin-top: 5px;
-    margin-left: 46%;
+}
+.horario select{                            /* Lista de opções de horário de contato */
+    margin-top: 10px;
     padding: 5px 20px;
     border-radius: 8px;
     outline: none;
@@ -132,6 +133,9 @@ form{                                    /* Formulário */
 }
 .horario select:focus{
     border-color: #ff8c00;
+}
+.botao{
+    text-align: center;
 }
 .botao input{                               /* Botão Enviar formulário */
     color: #ffffff;
@@ -142,7 +146,6 @@ form{                                    /* Formulário */
     border-radius: 8px;
     outline: none;
     cursor: pointer;
-    margin-left: 45.1%;
     font-family: 'Montserrat', sans-serif;
 }
 .botao input:active{                        /* Reação do cursor no botão */
@@ -150,7 +153,7 @@ form{                                    /* Formulário */
 }
 
 .horario-funcionamento{
-    margin-left: 44%;
+    text-align: center;
     font-family: 'Montserrat', sans-serif;
 }
 .horario-funcionamento p{
@@ -158,12 +161,11 @@ form{                                    /* Formulário */
     margin-top: 30px;
     margin-bottom: 10px;
 }
-
 table{
-    margin-left: 44%;
-    border-radius: 5px;
     text-align: center;
+    border-radius: 5px;
     font-family: 'Montserrat', sans-serif;
+    margin: 0 auto;
 }
 thead{
     background-color: #2c2c2c;
@@ -193,4 +195,42 @@ footer p{
 }
 footer p:hover{
     color: #cccccc;
+}
+
+/* Ajuste responsivo Mobile */
+
+@media screen and (max-width: 480px) {
+    
+    .caixa-header img{
+        width: 33% ;
+    }
+    .navegacao li{
+        display: block;
+    }
+    .campos label, .radios p, .horario p{    /* Campos Labels da página */
+        color: #ffffff;
+        padding: 10px 0;
+        text-align: center;
+        background-color: #303030;
+        margin: 10px 15%;
+        font-size: 13px;
+        font-weight: normal;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        text-transform: uppercase;
+        font-family: 'Montserrat', sans-serif;
+    }
+    .campos input, .campos textarea{           /* Campos Input e Textarea */
+    position: relative;
+    text-align: center;
+    padding: 10px 5px;
+    left: 0;
+    margin: 0 auto;
+    width: 65%;
+    border-radius: 8px;
+    border: 1px solid #2c2c2c;
+    outline: none;
+    caret-color: #ff8c00;
+    font-family: 'Montserrat', sans-serif;
+}
 }
